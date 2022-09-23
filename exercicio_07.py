@@ -1,0 +1,9 @@
+def multiplicador(numero):
+    a = 2 # esta variavel tem escopo local
+    print(f"Dentro da função, a variável a vale: {a}")
+    return a * numero
+
+
+a = 3 # esta variável tem escopo global
+b = multiplicador(5)
+print(f"Fora da função, a variável a vale: {a}")
